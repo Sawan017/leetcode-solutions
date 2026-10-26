@@ -14,15 +14,10 @@ public:
          mp[nums[i]] = i;
        }
        for(int j = 1 ; j < nums.size()+1 ; j++){
-        if(mp.find(j) != mp.end()){
-            continue;
-        }
-        else{
+        if(mp.find(j) == mp.end()){
             arr.push_back(j);
-        }
+        } 
        }
-        
-       
        return arr;
     }
 };
